@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landing page</title>
     
-    <link href="dist/style.css" rel="stylesheet"></head>
+    <link href="dist/style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  
     <body>
     <nav class="bg-blue-950 sticky top-0 z-50 text-white shadow-md p-7 gap-10   px-4 md:px-10 py-4">
 <div class="flex items-center justify-between ">
@@ -23,6 +26,7 @@
 
 </div></div>
     </nav>
+    <!---Hero-->
     
 <section id="home" class="pt-24 min-h-screen bg-blue-900 text-white">
 
@@ -68,10 +72,12 @@
     Get Started
     <span>→</span>
   </a>
-  <a href="#" class="flex items-center gap-2 text-white hover:text-blue-400 transition">
+  <a href="#" class="flex gap-2 text-white hover:text-blue-400 transition">
     <span class="text-lg">▶</span>
     How it Work
   </a></div></section>
+
+  <!--features-->
   <section id="features" class=" bg-blue-950 py-20  ">
     
     <div class="text-center space-y-5">
@@ -142,8 +148,9 @@
     </div>
 
   </div>
-</section id=" about">
-<section class="bg-blue-950 text-white py-20 px-6">
+</section>
+<!--About-->
+<section id=" about" class="bg-blue-950 text-white py-20 px-6">
   <div class="max-w-6xl mx-auto text-center">
 
     <h2 class="text-3xl md:text-5xl font-bold">
@@ -151,9 +158,8 @@
     </h2>
     <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      
     </p>
-
-
     <div class="flex justify-center gap-10 mt-10 border-b border-gray-700">
       <button onclick="showTab('about')" class="tab-btn pb-3 border-b-2 border-blue-500">About Us</button>
       <button onclick="showTab('mission')" class="tab-btn pb-3">Our Mission</button>
@@ -161,14 +167,9 @@
     </div>
 
     <div class="mt-12 grid md:grid-cols-2 gap-10 items-center text-left">
-
-
       <div>
         <img src="photos/pic3.jpg"
              class="rounded-lg shadow-lg">
-             
-             
-
       </div>
 
       <div id="tab-content">
@@ -192,6 +193,7 @@
 
   </div>
 </section>
+<!--id-->
     <section id="Team" class="bg-blue-950 text-white py-20 px-6">
   <div class="max-w-6xl mx-auto text-center">
 
@@ -235,6 +237,7 @@
 
   </div>
 </section>
+<!--portifolio-->
 <section id="portifolio" class="bg-blue-950 text-white py-20 px-6">
   <div class="max-w-6xl mx-auto text-center">
 
@@ -244,6 +247,7 @@
 
     <p class="text-gray-400 mt-4 max-w-xl mx-auto">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros.
+      Donec vitae tortor lacus. Phasellus aliquam ante in maximus
     </p>
 
     <div class="flex justify-center gap-6 mt-6 text-sm">
@@ -286,6 +290,7 @@
 
   </div>
 </section>
+<!--what clients about us-->
 <section id="what clients say about us" class="bg-blue-950 text-white py-20 px-6">
   <div class="max-w-6xl mx-auto text-center">
 
@@ -353,134 +358,368 @@
 
   </div>
 </section>
-<section id="Articles" class="bg-blue-950 text-white py-20 px-6">
-  <div class="max-w-6xl mx-auto text-center">
+<!--pricing-->
+<section id="pricing" class="py-20 px-6 bg-blue-950">
+    <div class="max-w-6xl mx-auto text-center">
 
-    <h2 class="text-3xl md:text-5xl font-bold">
-      Latest News & Articles <br> From Our Blog
-    </h2>
+      
+      <h1 class="text-4xl font-bold mb-4">
+        Affordable Pricing With <br> Simple Plans
+      </h1>
+      <p class="text-slate-400 max-w-xl mx-auto mb-16">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
 
-    <p class="text-gray-400 mt-4 max-w-xl mx-auto">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros.
-    </p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-left">
+      
+      <div class="grid md:grid-cols-3 gap-8">
 
-      <div class="group">
-        <div class="relative overflow-hidden rounded-lg">
-          <img src="photos/art1.jpg" alt="" class="w-full h-48 object-cover group-hover:scale-110 transition duration-300">
+    
+        <div class="border border-slate-700 rounded-xl p-8 bg-slate-800/40 hover:shadow-xl hover:-translate-y-2 transition">
+          <h3 class="text-xl font-semibold mb-2">Free</h3>
+          <p class="text-slate-400 text-sm mb-6">The most basic plan</p>
 
-  
-          <span class="absolute top-3 left-3 bg-blue-600 text-xs px-3 py-1 rounded">
-            Online Business
-          </span>
+          <div class="text-4xl font-bold mb-6">$0<span class="text-lg font-normal">/month</span></div>
+          <hr class="border-slate-700 mb-6">
+
+          <ul class="space-y-3 text-slate-300 mb-8 text-left">
+            <li class="flex items-center"><span class="text-blue-400 mr-2">✔</span>300 GB Storage</li>
+            <li class="flex items-center"><span class="text-blue-400 mr-2">✔</span>Unlimited Photos and Videos</li>
+            <li class="flex items-center"><span class="text-blue-400 mr-2">✔</span>Exclusive Support</li>
+            <li class="flex items-center text-slate-500"><span class="mr-2">✔</span>Custom Branding Strategy</li>
+            <li class="flex items-center text-slate-500"><span class="mr-2">✔</span>Free SEO Tools</li>
+          </ul>
+
+          <button class="w-full bg-slate-700 hover:bg-slate-600 py-2 rounded-lg">
+            Join This Plan →
+          </button>
         </div>
 
-        <div class="mt-4 text-gray-400 text-sm flex gap-4">
-          <span>By Admin</span>
-          <span>25 Dec, 2025</span>
+        
+        <div class="border border-blue-500 rounded-xl p-8 bg-slate-800 shadow-lg scale-105 hover:shadow-2xl hover:-translate-y-2 transition">
+          <h3 class="text-xl font-semibold mb-2">Basic</h3>
+          <p class="text-slate-400 text-sm mb-6">The most popular plan</p>
+
+          <div class="text-4xl font-bold mb-6">$29<span class="text-lg font-normal">/month</span></div>
+          <hr class="border-slate-700 mb-6">
+
+          <ul class="space-y-3 text-slate-300 mb-8 text-left">
+            <li class="flex items-center"><span class="text-blue-400 mr-2">✔</span>300 GB Storage</li>
+            <li class="flex items-center"><span class="text-blue-400 mr-2">✔</span>Unlimited Photos and Videos</li>
+            <li class="flex items-center"><span class="text-blue-400 mr-2">✔</span>Exclusive Support</li>
+            <li class="flex items-center"><span class="text-blue-400 mr-2">✔</span>Custom Branding Strategy</li>
+            <li class="flex items-center text-slate-500"><span class="mr-2">✔</span>Free SEO Tools</li>
+          </ul>
+
+          <button class="w-full bg-blue-600 hover:bg-blue-500 py-2 rounded-lg">
+            Join This Plan →
+          </button>
         </div>
 
-        <h3 class="mt-2 font-semibold text-lg group-hover:text-blue-400 transition">
-          Free advertising for your online business
-        </h3>
-      </div>
+        
+        <div class="border border-slate-700 rounded-xl p-8 bg-slate-800/40 hover:shadow-xl hover:-translate-y-2 transition">
+          <h3 class="text-xl font-semibold mb-2">Premium</h3>
+          <p class="text-slate-400 text-sm mb-6">The most premium plan</p>
 
-      <div class="group">
-        <div class="relative overflow-hidden rounded-lg">
-          <img src="photos/art2.jpg" alt="" class="w-full h-48 object-cover group-hover:scale-110 transition duration-300">
+          <div class="text-4xl font-bold mb-6">$99<span class="text-lg font-normal">/month</span></div>
+          <hr class="border-slate-700 mb-6">
 
-          <span class="absolute top-3 left-3 bg-blue-600 text-xs px-3 py-1 rounded">
-            UI/UX Design
-          </span>
+          <ul class="space-y-3 text-slate-300 mb-8 text-left">
+            <li class="flex items-center"><span class="text-blue-400 mr-2">✔</span>300 GB Storage</li>
+            <li class="flex items-center"><span class="text-blue-400 mr-2">✔</span>Unlimited Photos and Videos</li>
+            <li class="flex items-center"><span class="text-blue-400 mr-2">✔</span>Exclusive Support</li>
+            <li class="flex items-center"><span class="text-blue-400 mr-2">✔</span>Custom Branding Strategy</li>
+            <li class="flex items-center"><span class="text-blue-400 mr-2">✔</span>Free SEO Tools</li>
+          </ul>
+
+          <button class="w-full bg-slate-700 hover:bg-slate-600 "text-blue-400 py-2 rounded-lg">
+            Join This Plan →
+          </button>
         </div>
 
-        <div class="mt-4 text-gray-400 text-sm flex gap-4">
-          <span>By Admin</span>
-          <span>18 Mar, 2025</span>
-        </div>
+      </div> <br> <br>
 
-        <h3 class="mt-2 font-semibold text-lg group-hover:text-blue-400 transition">
-          9 simple ways to improve your design skills
-        </h3>
-      </div>
-
-      <div class="group">
-        <div class="relative overflow-hidden rounded-lg">
-          <img src="photos/art3.jpg" alt="" class="w-full h-48 object-cover group-hover:scale-110 transition duration-300">
-
-          <span class="absolute top-3 left-3 bg-blue-600 text-xs px-3 py-1 rounded">
-            Web Development
-          </span>
-        </div>
-
-        <div class="mt-4 text-gray-400 text-sm flex gap-4">
-          <span>By Admin</span>
-          <span>12 Feb, 2025</span>
-        </div>
-
-        <h3 class="mt-2 font-semibold text-lg group-hover:text-blue-400 transition">
-          Tips to quickly improve your coding speed
-        </h3>
+      
+      <div class="mt-16">
+        <p class="text-lg">Looking for a company solution?</p>
+        <p class="text-blue-500 text-sm font-semibold">Contact our team to get a quote.</p>
       </div>
 
     </div>
-    <div class="border-t border-gray-800 mt-16"></div>
+  </section>
+    <!--articles-->
+  <section id="articles" class="py-20 px-6 bg-blue-900">
+    <div class="max-w-6xl mx-auto text-center">
 
-  </div>
-</section>
+  
+      <h1 class="text-4xl font-bold mb-4">
+        Latest News & Articles <br> From Our Blog
+      </h1>
+      <p class="text-slate-400 max-w-xl mx-auto mb-16">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        In convallis tortor eros. Donec vitae tortor lacus.
+      </p>
 
-  <section id="support" class="bg-blue-950 text-white py-16 px-6">
-  <div class="max-w-6xl mx-auto">
+      
+      <div class="grid md:grid-cols-3 gap-8 text-left">
 
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-10">
+        
+        <div class="bg-slate-800/40 rounded-xl overflow-hidden hover:shadow-xl hover:-translate-y-2 transition">
+          <img src="photos/art1.jpg" alt="Online Business" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="text-blue-400 text-sm font-semibold">Online Business</span>
+            <h3 class="text-xl font-bold mt-2 mb-4">
+              Free advertising for your online business
+            </h3>
+            <div class="flex items-center text-slate-400 text-sm space-x-4">
+              <span>By Musharof Chy</span>
+              <span>•</span>
+              <span>25 Dec, 2025</span>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="bg-slate-800/40 rounded-xl overflow-hidden hover:shadow-xl hover:-translate-y-2 transition">
+          <img src="photos/art2.jpg" alt="UI/UX Design" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="text-blue-400 text-sm font-semibold">Ui/Ux Design</span>
+            <h3 class="text-xl font-bold mt-2 mb-4">
+              9 simple ways to improve your design skills
+            </h3>
+            <div class="flex items-center text-slate-400 text-sm space-x-4">
+              <span>By Musharof Chy</span>
+              <span>•</span>
+              <span>19 Mar, 2025</span>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="bg-slate-800/40 rounded-xl overflow-hidden hover:shadow-xl hover:-translate-y-2 transition">
+          <img src="photos/art3.jpg" alt="Web Development" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="text-blue-400 text-sm font-semibold">Web Development</span>
+            <h3 class="text-xl font-bold mt-2 mb-4">
+              Tips to quickly improve your coding speed
+            </h3>
+            <div class="flex items-center text-slate-400 text-sm space-x-4">
+              <span>By Musharof Chy</span>
+              <span>•</span>
+              <span>15 Feb, 2025</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="bg-slate-900 text-white py-24 px-6">
+  <div class="max-w-4xl mx-auto">
+
+    
+    <div class="border-t border-slate-700 mb-16"></div>
+
+    
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-12">
+      
       <div>
-        <h1 class="text-3xl md:text-5xl font-bold leading-tight">
-          Need Any Help?<br>Say hello
-        </h1>
-        <p class="text-gray-400 mt-4 max-w-md">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Donec vitae tortor aliquam ante.
+        <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+          Need Any Help? <br /> Say hello
+        </h2>
+        <p class="text-slate-400 mt-3 text-sm max-w-md">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
       </div>
 
       <div class="flex items-center gap-4">
-        <div class="w-20 h-[2px] bg-gray-400"></div>
-        <p class="text-lg md:text-xl">info@gostartup.com</p>
+        <div class="w-16 h-[1px] bg-slate-500"></div>
+        <span class="text-lg">info@gostartup.com</span>
       </div>
 
     </div>
-    <div class="border-t border-gray-700 my-10"></div>
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-gray-300">
+
+    
+    <div class="grid md:grid-cols-3 gap-8 text-sm text-slate-300 mb-16">
       <div>
-        <h3 class="text-white font-semibold mb-2">Email Address</h3>
-        <p>support@startup.com</p>
+        <p class="text-white font-medium">Email Address</p>
+        <p class="text-slate-400 mt-1">support@startup.com</p>
       </div>
       <div>
-        <h3 class="text-white font-semibold mb-2">Phone Number</h3>
-        <p>+009 8754 3433 223</p>
+        <p class="text-white font-medium">Phone Number</p>
+        <p class="text-slate-400 mt-1">+009 8754 3433 223</p>
       </div>
       <div>
-        <h3 class="text-white font-semibold mb-2">Office Location</h3>
-        <p>76/A, Green valley, California, USA.</p>
+        <p class="text-white font-medium">Office Location</p>
+        <p class="text-slate-400 mt-1">76/A, Green Lane, California, USA</p>
       </div>
-      <div class="flex items-start gap-4 text-xl">
-        <a href="#" class="hover:text-blue-400">F</a>
-        <a href="#" class="hover:text-blue-400">X</a>
-        <a href="#" class="hover:text-blue-400">in</a>
-        <a href="#" class="hover:text-blue-400">Be</a>
+    </div>
+
+    
+    <form class="space-y-10">
+
+
+      <div class="grid md:grid-cols-2 gap-10">
+        <div>
+          <label class="text-sm text-slate-400">Your Name</label>
+          <input type="text" placeholder="Full Name"
+            class="w-full bg-transparent border-b border-slate-600 py-2 focus:outline-none focus:border-blue-500">
+        </div>
+
+        <div>
+          <label class="text-sm text-slate-400">Email Address</label>
+          <input type="email" placeholder="Email Address"
+            class="w-full bg-transparent border-b border-slate-600 py-2 focus:outline-none focus:border-blue-500">
+        </div>
       </div>
 
+      
+      <div class="grid md:grid-cols-2 gap-10">
+        <div>
+          <label class="text-sm text-slate-400">Phone (Optional)</label>
+          <input type="text" placeholder="Phone Number"
+            class="w-full bg-transparent border-b border-slate-600 py-2 focus:outline-none focus:border-blue-500">
+        </div>
+
+        <div>
+          <label class="text-sm text-slate-400">Subject</label>
+          <input type="text" placeholder="Type Subject"
+            class="w-full bg-transparent border-b border-slate-600 py-2 focus:outline-none focus:border-blue-500">
+        </div>
+      </div>
+
+      
+      <div>
+        <label class="text-sm text-slate-400">Message</label>
+        <textarea rows="3" placeholder="Type Message"
+          class="w-full bg-transparent border-b border-slate-600 py-2 focus:outline-none focus:border-blue-500"></textarea>
+      </div>
+
+
+      <div class="flex items-center gap-2 text-sm text-slate-400">
+        <input type="checkbox" class="accent-blue-500">
+        <span>I have read the terms of the Service & I accept Privacy Policy</span>
+      </div>
+
+
+      <div>
+        <button class="mt-12 px-6 py-3 bg-blue-500 rounded hover:bg-blue-600">
+      Send message
+    </button>
+      </div>
+
+    </form>
+
+  </div>
+</section>
+  
+
+<section class="bg-blue-950 text-white py-20">
+  <div class="w-[90%] mx-auto">
+
+    <!-- CTA -->
+    <div class="bg-gradient-to-r from-[#0A1633] via-[#111F45] to-[#0A1633] rounded-lg px-6 md:px-16 py-10 md:py-14 flex flex-col md:flex-row items-center justify-between gap-8 mb-20 text-center md:text-left">
+      <div>
+        <h2 class="text-2xl md:text-4xl font-bold leading-tight">
+          Looking for a collaboration?<br>
+          Get Started Today!
+        </h2>
+        <p class="text-gray-400 mt-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <button class="bg-blue-600 px-8 py-4 rounded-md font-medium">
+        Get Started Now
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 border-b border-gray-800 pb-14">
+
+      <!-- Logo -->
+      <div>
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-8 h-8 bg-blue-600 rotate-45"></div>
+          <h2 class="text-3xl font-bold">GoStartup</h2>
+        </div>
+
+        <p class="text-gray-400 text-sm mb-6">
+          Lorem ipsum dolor sit amet,<br>
+          consectetur adipiscing elit.
+        </p>
+
+        <div class="flex gap-4 text-gray-500">
+          <span>f</span>
+          <span>x</span>
+          <span>in</span>
+          <span>Be</span>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h3 class="font-semibold text-xl mb-5">Company</h3>
+        <ul class="space-y-3 text-gray-400">
+          <li>Home</li>
+          <li>Product</li>
+          <li>Careers</li>
+          <li>Pricing</li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div>
+        <h3 class="font-semibold text-xl mb-5">Support</h3>
+        <ul class="space-y-3 text-gray-400">
+          <li>Company</li>
+          <li>Press media</li>
+          <li>Our Blog</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="font-semibold text-xl mb-5">Get in touch</h3>
+        <p class="text-gray-400 text-sm">Toll Free Customer Care</p>
+        <p class="font-semibold mb-5">+(1) 123 456 7890</p>
+
+        <p class="text-gray-400 text-sm">Need live support?</p>
+        <p class="font-semibold">support@domain.com</p>
+      </div>
+
+      <!-- Newsletter -->
+      <div>
+        <h3 class="font-semibold text-xl mb-5">Newsletter</h3>
+        <p class="text-gray-400 text-sm mb-4">
+          Subscribe to receive future updates
+        </p>
+
+        <div class="flex bg-[#1B2742] rounded overflow-hidden">
+          <input
+            type="email"
+            placeholder="Email address"
+            class="bg-transparent px-4 py-3 w-full outline-none"
+          >
+          <button class="px-5 bg-[#24314f]">></button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 text-gray-500 text-sm text-center">
+      <div class="flex flex-wrap justify-center gap-6">
+        <a href="#">English</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Support</a>
+      </div>
+
+      <p>© 2025 Startup. All rights reserved</p>
     </div>
 
   </div>
-</div>
-
-
-  </section>
-  
-    
-
-
+</section>
     
 </body>
 </html>
